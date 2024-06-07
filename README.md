@@ -2,7 +2,39 @@
 
 数据分析作业代码，豆瓣电影排行榜数据爬取（排名页面+详情页面），进行简单数据分析。
 
-## 使用说明
+
+## 功能说明
+
+- 基本信息爬虫：只爬取排行榜显示的相关信息
+- 详情信息爬虫：爬取每个电影详情页信息，建议填写Cookie，避免反爬限制
+- 简单数据分析：词云图、热度排名统计、聚类分析、线性回归
+
+<html><body>
+<table>
+<tr>
+<td><img src="./files/词云图/主演词云图.png" alt="主演词云图"/></td>
+<td><img src="./files/词云图/导演词云图.png" alt="导演词云图"/></td>
+<td><img src="./files/词云图/编剧词云图.png" alt="编剧词云图"/></td>
+</tr>
+<tr>
+<td><img src="./files/词云图/制片国家或地区词云图.png" alt="制片国家或地区词云图"/></td>
+<td><img src="./files/词云图/类型词云图.png" alt="类型词云图"/></td>
+<td><img src="./files/词云图/语言词云图.png" alt="语言词云图"/></td>
+</tr>
+<tr>
+<td><img src="./files/分析图/热榜.png" alt="热榜"/></td>
+<td><img src="./files/分析图/排行榜.png" alt="排行榜"/></td>
+<td><img src="./files/分析图/二维聚类分析.png" alt="二维聚类分析"/></td>
+</tr>
+<tr>
+<td><img src="./files/分析图/三维聚类分析.png" alt="三维聚类分析"/></td>
+<td><img src="./files/分析图/线性回归分析.png" alt="线性回归"/></td>
+<td><img src="./files/分析图/线性回归_评分与评分人数.png" alt="线性回归_评分与评分人数"/></td>
+</tr>
+</table>
+</body></html>
+
+## 使用方法
 
 ### 克隆项目
 
@@ -23,42 +55,6 @@ python run.py
 ```
 未使用多线程，可能会有些卡顿。
 
-## 功能说明
-
-- 基本信息爬虫：只爬取排行榜显示的相关信息
-- 详情信息爬虫：爬取每个电影详情页信息，建议填写Cookie，避免反爬限制
-- 简单数据分析：词云图、热度排名统计、聚类分析、线性回归
-
-
-<div class="image-container">
-<img class="image-item" src='./files/词云图/主演词云图.png'>
-<img class="image-item" src='./files/词云图/导演词云图.png'>
-<img class="image-item" src='./files/词云图/编剧词云图.png'>
-<img class="image-item" src='./files/词云图/制片国家或地区词云图.png'>
-<img class="image-item" src='./files/词云图/类型词云图.png'>
-<img class="image-item" src='./files/词云图/语言词云图.png'>
-</div>
-
-<div class="image-container">
-<img class="image-item" src='./files/分析图/热榜.png'>
-<img class="image-item" src='./files/分析图/排行榜.png'>
-<img class="image-item" src='./files/分析图/二维聚类分析.png'>
-<img class="image-item" src='./files/分析图/三维聚类分析.png'>
-<img class="image-item" src='./files/分析图/线性回归_评分与五星比例.png'>
-<img class="image-item" src='./files/分析图/线性回归_评分与评分人数.png'>
-<img class="image-item" src='./files/分析图/线性回归分析.png'>
-</div>
-
-<style>
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-.image-item {
-    flex: 1 0 33%;
-    max-width: 33%;
-}
-</style>
 
 ## 文件树
 
@@ -90,3 +86,8 @@ douban
    └─ __init__.py
 ```
 
+## 使用许可
+
+1. 本项目的代码和内容仅供学习和研究使用，不得用于任何违法活动。
+2. 使用者对使用本项目的代码和内容产生的任何后果负全责。
+3. 如果本项目的代码或内容侵犯了您的权益，请通过该<a href='mailto:report@ohnnn.com'>邮箱地址</a>联系我，我将尽快删除相关内容。
